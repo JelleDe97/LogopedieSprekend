@@ -2967,7 +2967,23 @@ gmp-map {
 						-ms-transform: scale(1.0);
 						transform: scale(1.0);
 					}
+			
+					/* Responsive stacking */
+					.profile1 {
+						flex-direction: column !important; /* override alternating row layouts */
+						align-items: center;               /* center image and text */
+					}
 
+					.profile {
+						max-width: 100%;   /* image full width */
+						margin-right: 0;
+						margin-bottom: 15px; /* spacing between image and text */
+					}
+
+					.profile1 .content {
+						max-width: 100%;   /* text full width */
+						margin-right: 0;
+					}
 		}
 
 		@media screen and (max-width: 480px) {
